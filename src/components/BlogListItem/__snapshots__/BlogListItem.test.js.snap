@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogListItem Component renders the UI as expected 1`] = `
+<li
+  className="BlogListItem BlogList__item"
+>
+  <div
+    className="BlogListItem__info"
+  >
+    <a
+      href="/blog/ck5dihtmc00003z5wdxct2ajt"
+      onClick={[Function]}
+    >
+      <h3
+        className="BlogListItem__title"
+      >
+        A Long Article About the History of People Grooming Their Cats.
+      </h3>
+    </a>
+    <div
+      className="BlogListItem__date_and_length"
+    >
+      December 22, 2019 · 9 min read
+    </div>
+    <div
+      className="BlogListItem__author"
+    >
+      Brandon Hutchison
+    </div>
+  </div>
+  <div
+    className="BlogListItem__pic_holder"
+  >
+    <a
+      href="/blog/ck5dihtmc00003z5wdxct2ajt"
+      onClick={[Function]}
+    >
+      <img
+        alt="lorem picsum"
+        src="https://picsum.photos/seed/three/255/255"
+      />
+    </a>
+  </div>
+</li>
+`;

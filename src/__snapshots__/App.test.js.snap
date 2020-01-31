@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component renders the UI as expected 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="NavBar"
+  >
+    <a
+      href="/blog"
+      onClick={[Function]}
+    >
+      <div>
+        Sterling | Blog
+      </div>
+    </a>
+    <div>
+      =
+    </div>
+  </nav>
+</div>
+`;

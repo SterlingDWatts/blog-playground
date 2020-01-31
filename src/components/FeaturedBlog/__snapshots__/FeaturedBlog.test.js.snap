@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedBlog Component renders the UI as expected 1`] = `
+<li
+  className="FeaturedBlog BlogList__item"
+>
+  <a
+    href="/blog/ck5dihtmc00003z5wdxct2ajt"
+    onClick={[Function]}
+  >
+    <img
+      alt="lorem picsum"
+      src="https://picsum.photos/seed/three/450/255"
+    />
+  </a>
+  <a
+    href="/blog/ck5dihtmc00003z5wdxct2ajt"
+    onClick={[Function]}
+  >
+    <h3
+      className="FeaturedBlog__title"
+    >
+      A Long Article About the History of People Grooming Their Cats.
+    </h3>
+  </a>
+  <div
+    className="FeaturedBlog__date_and_length"
+  >
+    December 22, 2019 · 9 min read
+  </div>
+  <div
+    className="FeaturedBlog__author"
+  >
+    Brandon Hutchison
+  </div>
+</li>
+`;

@@ -1,0 +1,9 @@
+.BlogListItem {
+  display: flex;
+  flex-direction: row;
+}
+
+.BlogListItem__info,
+.BlogListItem__pic_holder {
+  width: 50%;
+}
