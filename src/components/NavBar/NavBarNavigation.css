@@ -1,0 +1,17 @@
+.NavBarNavigation__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavBarNavList_row {
+  flex-direction: row;
+}
+
+.NavBarNavList_column {
+  flex-direction: column;
+}
+
+.NavBarCollapse__small > .NavBarNavigation__list {
+  flex-direction: column;
+  background-color: white;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import NavSearch from "../NavSearch";
 import FeaturedBlog from "../FeaturedBlog/FeaturedBlog";
 import BlogListItem from "../BlogListItem/BlogListItem";
 import BlogContext from "../../BlogContext";
@@ -15,10 +16,13 @@ class BlogList extends Component {
         ? blogs.slice(1).map(blog => <BlogListItem blog={blog} key={blog.id} />)
         : " ";
     return (
-      <ul className="BlogList">
-        {featBlog}
-        {blogsList}
-      </ul>
+      <div className="BlogList">
+        <NavSearch />
+        <ul className="BlogList__list">
+          {featBlog}
+          {blogsList}
+        </ul>
+      </div>
     );
   }
 }

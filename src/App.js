@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import NavSearch from "./components/NavSearch";
+import { Route } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
 import BlogList from "./components/BlogList/BlogList";
 import BlogPage from "./components/BlogPage/BlogPage";
 import BlogContext from "./BlogContext";
@@ -57,8 +56,17 @@ class App extends Component {
     return (
       <div className="App">
         <BlogContext.Provider value={contextValue}>
-          <NavBar />
-          <Route path="/blog" component={NavSearch} />
+          <NavBar fixed="top">
+            <NavBar.Marque href="/blog">Sterling | Blog</NavBar.Marque>
+            <NavBar.Collapse>
+              <NavBar.Navigation>
+                <NavBar.NavItem href="/">Home</NavBar.NavItem>
+                <NavBar.NavItem href="/projects">Projects</NavBar.NavItem>
+                <NavBar.NavItem href="/about">About Me</NavBar.NavItem>
+                <NavBar.NavItem href="/create">Create</NavBar.NavItem>
+              </NavBar.Navigation>
+            </NavBar.Collapse>
+          </NavBar>
           <Route exact path="/blog" component={BlogList} />
           <Route path="/blog/:blogID" component={BlogPage} />
         </BlogContext.Provider>

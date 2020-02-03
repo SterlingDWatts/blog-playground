@@ -1,0 +1,24 @@
+.SideBar {
+  border-left: 1px solid black;
+  background-color: white;
+  min-width: 210px;
+  padding: 8px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.SideBar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SideBar li {
+  padding: 8px;
+}
+
+li.SideBar__close {
+  padding: 16px;
+}

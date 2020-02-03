@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import BlogBody from "./BlogBody/BlogBody";
-import BlogNotFound from "./BlogNotFound/BlogNotFound";
-import BlogListItem from "./BlogListItem/BlogListItem";
-import BlogContext from "../BlogContext";
+import NavSearch from "../NavSearch";
+import BlogBody from "../BlogBody/BlogBody";
+import BlogNotFound from "../BlogNotFound/BlogNotFound";
+import BlogListItem from "../BlogListItem/BlogListItem";
+import BlogContext from "../../BlogContext";
 import "./BlogPage.css";
 
 class BlogPage extends Component {
@@ -21,6 +22,7 @@ class BlogPage extends Component {
         : " ";
     return (
       <div className="BlogPage">
+        <NavSearch />
         {blogBody}
         <ul>{blogList}</ul>
       </div>

@@ -1,0 +1,10 @@
+.NavBar {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 1;
+  min-height: 32px;
+  z-index: 10;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
