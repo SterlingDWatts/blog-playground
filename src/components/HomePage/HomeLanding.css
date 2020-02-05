@@ -1,0 +1,71 @@
+.HomeLanding {
+  height: calc(100vh - 37px);
+  min-height: 533px;
+  display: flex;
+  flex-direction: column;
+  background-color: #00685b;
+  color: white;
+}
+
+.HomeLanding__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  min-height: 100px;
+}
+
+.HomeLanding h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.HomeLanding__italy_image {
+  height: 50%;
+  min-height: 265px;
+  background-image: url(https://sterlingdwatts.github.io/portfolio/images/italy.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.HomeLanding__blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  min-height: 120px;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 500px) {
+  .HomeLanding__italy_image {
+    width: 80%;
+    margin: auto;
+    box-shadow: 6px 6px 5px 0 rgba(0, 0, 0, 0.75);
+  }
+
+  .HomeLanding__blurb {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .HomeLanding__header {
+    height: 60%;
+    width: 50%;
+  }
+
+  .HomeLanding__italy_image {
+    width: 50%;
+    height: 100%;
+    order: 90;
+    box-shadow: none;
+  }
+
+  .HomeLanding__blurb {
+    width: 50%;
+    height: 40%;
+    padding: 64px;
+  }
+}

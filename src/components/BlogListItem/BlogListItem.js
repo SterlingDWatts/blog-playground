@@ -18,7 +18,11 @@ class BlogListItem extends Component {
         </div>
         <div className="BlogListItem__pic_holder">
           <Link to={`/blog/${this.props.blog.id}`}>
-            <img src={this.props.blog.squarePic} alt="lorem picsum" />
+            <img
+              src={this.props.blog.squarePic}
+              alt="lorem picsum"
+              width="80"
+            />
           </Link>
         </div>
       </li>

@@ -1,0 +1,70 @@
+.Project__header {
+  margin: 32px 0 16px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.Project__pic {
+  width: 100%;
+  height: calc((100vw - 32px) * 1.883);
+  background-size: cover;
+  background-position: top;
+  box-shadow: 6px 6px 5px 0 rgba(0, 0, 0, 0.5),
+    0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.Project__about {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  padding: 8px;
+  background-color: #ffff6b;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px 0 #8383368a, 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Project__more_info {
+  float: right;
+}
+
+.Quizz_pic {
+  background-image: url(https://sterlingdwatts.github.io/portfolio/images/quaff-quiz-mobile.png);
+}
+
+.Hub_pic {
+  background-image: url(https://sterlingdwatts.github.io/portfolio/images/game-hub-mobile-landing-page.png);
+  height: calc((100vw - 32px) * 1.628);
+}
+
+.Project a:link,
+.Project a:visited {
+  color: #00685b;
+}
+
+@media screen and (min-width: 500px) {
+  .Project__pic {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .Quizz_pic {
+    background-image: url(https://sterlingdwatts.github.io/portfolio/images/quaff-quiz-desktop.png);
+    height: calc(80vw * 0.666);
+  }
+
+  .Hub_pic {
+    background-image: url(https://sterlingdwatts.github.io/portfolio/images/game-hub-desktop-landing-page.png);
+    height: calc(80vw * 0.666);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Project__pic,
+  .Quizz_pic,
+  .Hub_pic {
+    width: 680px;
+    height: 453.33px;
+  }
+}

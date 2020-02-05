@@ -1,9 +1,19 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
+import HomePage from "./components/HomePage/HomePage";
 import BlogList from "./components/BlogList/BlogList";
 import BlogPage from "./components/BlogPage/BlogPage";
+import CreateBlog from "./components/CreateBlog/CreateBlog";
 import BlogContext from "./BlogContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedinIn,
+  faFacebookF,
+  faInstagram,
+  faTwitter
+} from "@fortawesome/free-brands-svg-icons";
 import blogs from "./blog-file";
 import "./App.css";
 
@@ -56,19 +66,29 @@ class App extends Component {
     return (
       <div className="App">
         <BlogContext.Provider value={contextValue}>
-          <NavBar fixed="top">
-            <NavBar.Marque href="/blog">Sterling | Blog</NavBar.Marque>
-            <NavBar.Collapse>
-              <NavBar.Navigation>
-                <NavBar.NavItem href="/">Home</NavBar.NavItem>
-                <NavBar.NavItem href="/projects">Projects</NavBar.NavItem>
-                <NavBar.NavItem href="/about">About Me</NavBar.NavItem>
-                <NavBar.NavItem href="/create">Create</NavBar.NavItem>
-              </NavBar.Navigation>
-            </NavBar.Collapse>
-          </NavBar>
+          <Route exact path="/" component={HomePage} />
           <Route exact path="/blog" component={BlogList} />
           <Route path="/blog/:blogID" component={BlogPage} />
+          <Route path="/create" component={CreateBlog} />
+          <NavBar theme="elpheba">
+            <NavBar.Navigation size="fill">
+              <NavBar.NavItem href="https://www.github.com">
+                <FontAwesomeIcon icon={faGithub} />
+              </NavBar.NavItem>
+              <NavBar.NavItem href="https://www.linkedin.com/in/sterlingdwatts">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </NavBar.NavItem>
+              <NavBar.NavItem href="https://www.facebook.com/sterlingdwatts">
+                <FontAwesomeIcon icon={faFacebookF} />
+              </NavBar.NavItem>
+              <NavBar.NavItem href="https://www.instagram.com/sterlingdwatts">
+                <FontAwesomeIcon icon={faInstagram} />
+              </NavBar.NavItem>
+              <NavBar.NavItem href="https://www.twitter.com/sterlingdwatts">
+                <FontAwesomeIcon icon={faTwitter} />
+              </NavBar.NavItem>
+            </NavBar.Navigation>
+          </NavBar>
         </BlogContext.Provider>
       </div>
     );

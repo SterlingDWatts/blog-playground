@@ -1,0 +1,13 @@
+.NavBarMarque {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 40px 0 0;
+  line-height: 1;
+  border: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.NavBarMarque > a:link {
+  text-decoration: none;
+}

@@ -11,7 +11,19 @@
   flex-direction: column;
 }
 
-.NavBarCollapse__small > .NavBarNavigation__list {
+.NavBarNavigation__item {
+  display: block;
+  margin: 0 8px;
+}
+
+.collapse.NavBarNavigation__item {
+  margin: 8px 0;
+}
+
+.NavBarNavigation__collapse > ul {
   flex-direction: column;
-  background-color: white;
+}
+
+.NavBarNavigation__fill {
+  width: 100%;
 }

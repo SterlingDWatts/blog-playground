@@ -1,9 +1,9 @@
 .BlogListItem {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.BlogListItem__info,
-.BlogListItem__pic_holder {
-  width: 50%;
+.BlogListItem__title {
+  font-weight: 600;
 }

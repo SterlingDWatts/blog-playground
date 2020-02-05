@@ -1,10 +1,89 @@
 .NavBar {
-  padding: 8px;
+  z-index: 9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 100%;
+}
+
+.NavBar__container {
+  padding: 8px 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   line-height: 1;
   min-height: 32px;
-  z-index: 10;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+}
+
+.NavBar__column {
+  flex-direction: column;
+}
+
+.NavBar__top {
+  position: fixed;
+  top: 0;
+}
+
+.NavBar__space-around > .NavBar__container {
+  justify-content: space-around;
+}
+
+.NavBar__space-evenly > .NavBar__container {
+  justify-content: space-evenly;
+}
+
+a:hover,
+b:hover {
+  cursor: pointer;
+}
+
+/* 
+*=== Themes ===
+*/
+
+/*
+*--- light ---
+*/
+.NavBar__light,
+.NavBarCollapse__small_shadow.light {
+  background-color: white;
+}
+
+a.light:link,
+button.light {
+  color: #0000ee;
+}
+
+a.light:hover,
+a.light:focus,
+button.light:hover,
+button.light:focus {
+  color: rgb(15, 15, 250);
+}
+
+a.light:visited {
+  color: #551a8b;
+}
+
+/*
+*--- elpheba ---
+*/
+.NavBar__elpheba,
+.NavBarCollapse__small_shadow.elpheba {
+  background-color: #003d32;
+}
+
+a.elpheba:link,
+a.elpheba:visited,
+button.elpheba {
+  color: #fcd734;
+}
+
+a.elpheba:hover,
+a.elpheba:focus,
+button.elpheba:hover,
+button.elpheba:focus {
+  color: #c5a600;
 }

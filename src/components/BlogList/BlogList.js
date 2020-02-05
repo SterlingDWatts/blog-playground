@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavSearch from "../NavSearch";
 import FeaturedBlog from "../FeaturedBlog/FeaturedBlog";
 import BlogListItem from "../BlogListItem/BlogListItem";
+import NavBar from "../NavBar/NavBar";
 import BlogContext from "../../BlogContext";
 import "./BlogList.css";
 
@@ -17,7 +18,17 @@ class BlogList extends Component {
         : " ";
     return (
       <div className="BlogList">
-        <NavSearch />
+        <NavBar fixed="top" theme="elpheba">
+          <NavBar.Marque href="/blog">Sterling | Blog</NavBar.Marque>
+          <NavBar.Collapse>
+            <NavBar.Navigation>
+              <NavBar.NavItem href="/">Home</NavBar.NavItem>
+              <NavBar.NavItem href="/projects">Projects</NavBar.NavItem>
+              <NavBar.NavItem href="/about">About Me</NavBar.NavItem>
+              <NavBar.NavItem href="/create">Create</NavBar.NavItem>
+            </NavBar.Navigation>
+          </NavBar.Collapse>
+        </NavBar>
         <ul className="BlogList__list">
           {featBlog}
           {blogsList}

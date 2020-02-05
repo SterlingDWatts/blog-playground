@@ -1,0 +1,17 @@
+.FeaturedBlog__title {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+a.FeaturedBlog__title_link:link,
+a.FeaturedBlog__title_link:visited {
+  text-decoration: none;
+  color: #0000ee;
+}
+
+a.FeaturedBlog__title_link:hover,
+a.FeaturedBlog__title_link:focus {
+  text-decoration: underline;
+}

@@ -8,9 +8,10 @@ import "./NavBar.css";
 
 class NavBar extends Component {
   static defaultProps = {
-    theme: "elpheba",
+    theme: "light",
     direction: "row",
-    fixed: "false"
+    fixed: false,
+    justify: "space-between"
   };
 
   constructor(props) {
@@ -19,7 +20,8 @@ class NavBar extends Component {
       theme: this.props.theme,
       direction: this.props.direction,
       fixed: this.props.fixed,
-      collapsed: true
+      collapsed: true,
+      justify: this.props.justify
     };
   }
 
@@ -29,6 +31,20 @@ class NavBar extends Component {
     });
   };
 
+  navBarClassNames = () => {
+    let classNames = [
+      this.state.direction,
+      this.state.fixed,
+      this.state.justify,
+      this.state.theme
+    ]
+      .filter(className => className)
+      .map(className => "NavBar__" + className);
+    classNames.push("NavBar");
+    classNames = classNames.join(" ");
+    return classNames;
+  };
+
   render() {
     const value = {
       theme: this.state.theme,
@@ -36,9 +52,12 @@ class NavBar extends Component {
       collapsed: this.state.collapsed,
       toggleCollapse: this.handleCollapseToggle
     };
+    const classNames = this.navBarClassNames();
     return (
       <NavBarContext.Provider value={value}>
-        <nav className="NavBar">{this.props.children}</nav>
+        <nav className={classNames}>
+          <div className="NavBar__container">{this.props.children}</div>
+        </nav>
       </NavBarContext.Provider>
     );
   }

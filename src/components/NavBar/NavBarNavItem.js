@@ -6,8 +6,9 @@ class NavBarNavItem extends Component {
   static contextType = NavBarContext;
 
   render() {
+    const linkClass = "NavBarNavItem " + this.context.theme;
     return (
-      <a className="NavBarNavItem" href={this.props.href}>
+      <a className={linkClass} href={this.props.href}>
         {this.props.children}
       </a>
     );

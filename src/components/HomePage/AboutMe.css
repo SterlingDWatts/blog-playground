@@ -1,0 +1,26 @@
+.AboutMe {
+  margin: 16px;
+}
+
+.AboutMe header {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+.AboutMe p {
+  margin: 16px 0;
+}
+
+@media screen and (min-width: 500px) {
+  .AboutMe {
+    width: 80%;
+    margin: 16px auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .AboutMe {
+    width: 680px;
+  }
+}

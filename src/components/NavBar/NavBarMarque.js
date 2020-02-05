@@ -7,10 +7,14 @@ class NavBarMarque extends Component {
   static contextType = NavBarContext;
 
   render() {
+    const linkClass = this.context.theme;
+
     return (
-      <div className="NavBarMarque">
-        <Link to={this.props.href}>{this.props.children}</Link>
-      </div>
+      <button type="button" className="NavBarMarque">
+        <Link to={this.props.href} className={linkClass}>
+          {this.props.children}
+        </Link>
+      </button>
     );
   }
 }

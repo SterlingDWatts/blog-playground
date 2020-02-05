@@ -8,9 +8,12 @@ class FeaturedBlog extends Component {
     return (
       <li className="FeaturedBlog BlogList__item">
         <Link to={`/blog/${this.props.blog.id}`}>
-          <img src={this.props.blog.longPic} alt="lorem picsum" />
+          <img src={this.props.blog.longPic} alt="lorem picsum" width="288" />
         </Link>
-        <Link to={`/blog/${this.props.blog.id}`}>
+        <Link
+          to={`/blog/${this.props.blog.id}`}
+          className="FeaturedBlog__title_link"
+        >
           <h3 className="FeaturedBlog__title">{this.props.blog.title}</h3>
         </Link>
         <div className="FeaturedBlog__date_and_length">
