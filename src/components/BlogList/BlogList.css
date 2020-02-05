@@ -1,4 +1,16 @@
+.BlogList {
+  background-image: linear-gradient(rgb(0, 61, 50), rgba(0, 61, 50, 0.5)),
+    url("https://static.wixstatic.com/media/11062b_6a134fc09ea34833a17d295e295ab517f000.jpg/v1/fill/w_1920,h_1080,al_c,q_85/11062b_6a134fc09ea34833a17d295e295ab517f000.webp");
+  background-size: 100vw 100%;
+  background-color: rgb(0, 61, 50);
+}
+
+.BlogList__list {
+  max-width: 680px;
+  margin: 0 auto;
+  background-color: white;
+}
+
 .BlogList__item {
   padding: 16px;
-  border-bottom: 1px solid black;
 }

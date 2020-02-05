@@ -27,6 +27,15 @@
 
 .Project__more_info {
   float: right;
+  background-color: #00685b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.Project__name_and_links {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .Quizz_pic {

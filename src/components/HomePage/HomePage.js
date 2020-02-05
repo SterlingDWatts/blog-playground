@@ -11,12 +11,13 @@ class HomePage extends Component {
   render() {
     return (
       <main className="HomePage">
-        <NavBar fixed="top">
+        <NavBar fixed="top" theme="elpheba">
           <NavBar.Marque href="/">Sterling | Dev</NavBar.Marque>
           <NavBar.Collapse>
             <NavBar.Navigation>
-              <NavBar.NavItem href="/projects">Projects</NavBar.NavItem>
-              <NavBar.NavItem href="/about">About Me</NavBar.NavItem>
+              <NavBar.NavItem href="/#about-me">About Me</NavBar.NavItem>
+              <NavBar.NavItem href="/#projects">Projects</NavBar.NavItem>
+              <NavBar.NavItem href="/#connect">Connect</NavBar.NavItem>
               <NavBar.NavItem href="/blog">Blog</NavBar.NavItem>
             </NavBar.Navigation>
           </NavBar.Collapse>

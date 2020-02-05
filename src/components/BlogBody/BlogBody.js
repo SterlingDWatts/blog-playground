@@ -10,9 +10,16 @@ class BlogBody extends Component {
     return (
       <main className="BlogBody">
         <header>
-          <h2>{this.props.blog.title}</h2>
+          <h2 className="BlogBody__title">{this.props.blog.title}</h2>
         </header>
-        <img src={this.props.blog.longPic} alt="fix-this" />
+        <div
+          className="BlogBody__pic"
+          style={{ backgroundImage: "url('" + this.props.blog.longPic + "')" }}
+        ></div>
+        <div className="BlogBody__date_and_author">
+          <div className="BlogBody__date">{this.props.blog.date}</div>
+          <div className="BlogBody__author">{this.props.blog.author}</div>
+        </div>
         {content}
       </main>
     );

@@ -18,14 +18,14 @@ class BlogList extends Component {
         : " ";
     return (
       <div className="BlogList">
-        <NavBar fixed="top" theme="elpheba">
+        <NavBar fixed="top" theme="elpheba" shadow="hide-shadow">
           <NavBar.Marque href="/blog">Sterling | Blog</NavBar.Marque>
           <NavBar.Collapse>
             <NavBar.Navigation>
+              <NavBar.NavItem href="/#about-me">About Me</NavBar.NavItem>
+              <NavBar.NavItem href="/#projects">Projects</NavBar.NavItem>
+              <NavBar.NavItem href="/#connect">Connect</NavBar.NavItem>
               <NavBar.NavItem href="/">Home</NavBar.NavItem>
-              <NavBar.NavItem href="/projects">Projects</NavBar.NavItem>
-              <NavBar.NavItem href="/about">About Me</NavBar.NavItem>
-              <NavBar.NavItem href="/create">Create</NavBar.NavItem>
             </NavBar.Navigation>
           </NavBar.Collapse>
         </NavBar>

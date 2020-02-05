@@ -15,13 +15,13 @@ class Project extends Component {
 
   render() {
     return (
-      <div className="Project">
+      <div className="Project" id="projects">
         <header className="Project__header">
           <h3>{this.props.name}</h3>
         </header>
         <div className={"Project__pic " + this.props.name + "_pic"}>
           <div className="Project__about">
-            <h5>
+            <h5 className="Project__name_and_links">
               {this.props.name}
               {" | "}
               <a href={this.props.site} target="_blank">

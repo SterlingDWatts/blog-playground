@@ -21,7 +21,8 @@ class NavBar extends Component {
       direction: this.props.direction,
       fixed: this.props.fixed,
       collapsed: true,
-      justify: this.props.justify
+      justify: this.props.justify,
+      shadow: this.props.shadow
     };
   }
 
@@ -36,7 +37,8 @@ class NavBar extends Component {
       this.state.direction,
       this.state.fixed,
       this.state.justify,
-      this.state.theme
+      this.state.theme,
+      this.state.shadow
     ]
       .filter(className => className)
       .map(className => "NavBar__" + className);

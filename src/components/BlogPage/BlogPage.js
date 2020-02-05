@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavSearch from "../NavSearch";
+import NavBar from "../NavBar/NavBar";
 import BlogBody from "../BlogBody/BlogBody";
 import BlogNotFound from "../BlogNotFound/BlogNotFound";
 import BlogListItem from "../BlogListItem/BlogListItem";
@@ -22,7 +22,17 @@ class BlogPage extends Component {
         : " ";
     return (
       <div className="BlogPage">
-        <NavSearch />
+        <NavBar fixed="top" theme="elpheba">
+          <NavBar.Marque href="/blog">Sterling | Blog</NavBar.Marque>
+          <NavBar.Collapse>
+            <NavBar.Navigation>
+              <NavBar.NavItem href="/#about-me">About Me</NavBar.NavItem>
+              <NavBar.NavItem href="/#projects">Projects</NavBar.NavItem>
+              <NavBar.NavItem href="/#connect">Connect</NavBar.NavItem>
+              <NavBar.NavItem href="/">Home</NavBar.NavItem>
+            </NavBar.Navigation>
+          </NavBar.Collapse>
+        </NavBar>
         {blogBody}
         <ul>{blogList}</ul>
       </div>

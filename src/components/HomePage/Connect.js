@@ -4,7 +4,7 @@ import "./Connect.css";
 class Connect extends Component {
   render() {
     return (
-      <section className="Connect">
+      <section className="Connect" id="connect">
         <div className="Connect__pic"></div>
         <div className="Connect__info" id="connect">
           <header>

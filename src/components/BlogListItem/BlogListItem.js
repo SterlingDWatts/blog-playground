@@ -8,7 +8,10 @@ class BlogListItem extends Component {
     return (
       <li className="BlogListItem BlogList__item">
         <div className="BlogListItem__info">
-          <Link to={`/blog/${this.props.blog.id}`}>
+          <Link
+            to={`/blog/${this.props.blog.id}`}
+            className="BlogListItem__title_link"
+          >
             <h3 className="BlogListItem__title">{this.props.blog.title}</h3>
           </Link>
           <div className="BlogListItem__date_and_length">
@@ -18,11 +21,12 @@ class BlogListItem extends Component {
         </div>
         <div className="BlogListItem__pic_holder">
           <Link to={`/blog/${this.props.blog.id}`}>
-            <img
-              src={this.props.blog.squarePic}
-              alt="lorem picsum"
-              width="80"
-            />
+            <div
+              className="BlogListItem__pic"
+              style={{
+                backgroundImage: "url('" + this.props.blog.squarePic + "')"
+              }}
+            ></div>
           </Link>
         </div>
       </li>
