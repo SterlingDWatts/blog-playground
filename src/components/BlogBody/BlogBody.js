@@ -4,9 +4,11 @@ import "./BlogBody.css";
 
 class BlogBody extends Component {
   render() {
-    const content = this.props.blog.content
-      .split("\n")
-      .map((paragraph, i) => <p key={i}>{paragraph}</p>);
+    const content = this.props.blog.content.split("\n").map((paragraph, i) => (
+      <p key={i} className="BlogBody__paragraph">
+        {paragraph}
+      </p>
+    ));
     return (
       <main className="BlogBody">
         <header>

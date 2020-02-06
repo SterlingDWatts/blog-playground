@@ -1,19 +1,243 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlogList Component renders list items when context is passed in 1`] = `
-<ul
+<div
   className="BlogList"
 >
-   
-   
-</ul>
+  <nav
+    className="NavBar__row NavBar__top NavBar__space-between NavBar__light-green NavBar__hide-shadow NavBar"
+  >
+    <div
+      className="NavBar__container"
+    >
+      <button
+        className="NavBarMarque"
+        type="button"
+      >
+        <a
+          className="light-green"
+          href="/blog"
+          onClick={[Function]}
+        >
+          Sterling | Blog
+        </a>
+      </button>
+      <button
+        className="NavBarCollapse__hamburger_button light-green"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-bars fa-w-14 "
+          data-icon="bars"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+      <div
+        className="NavBarCollapse__big"
+      >
+        <nav
+          className="NavBarNavigation__s NavBarNavigation"
+        >
+          <ul
+            className="NavBarNavigation__list"
+          >
+            <li>
+              <div
+                className="NavBarNavigation__item"
+              >
+                <a
+                  className="NavBarNavItem light-green"
+                  href="/#about-me"
+                  onClick={[Function]}
+                >
+                  About Me
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                className="NavBarNavigation__item"
+              >
+                <a
+                  className="NavBarNavItem light-green"
+                  href="/#projects"
+                  onClick={[Function]}
+                >
+                  Projects
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                className="NavBarNavigation__item"
+              >
+                <a
+                  className="NavBarNavItem light-green"
+                  href="/#connect"
+                  onClick={[Function]}
+                >
+                  Connect
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                className="NavBarNavigation__item"
+              >
+                <a
+                  className="NavBarNavItem light-green"
+                  href="/"
+                  onClick={[Function]}
+                >
+                  Home
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+       
+    </div>
+  </nav>
+  <ul
+    className="BlogList__list"
+  >
+     
+     
+  </ul>
+</div>
 `;
 
 exports[`BlogList Component renders the UI as expected 1`] = `
-<ul
+<div
   className="BlogList"
 >
-   
-   
-</ul>
+  <nav
+    className="NavBar__row NavBar__top NavBar__space-between NavBar__light-green NavBar__hide-shadow NavBar"
+  >
+    <div
+      className="NavBar__container"
+    >
+      <button
+        className="NavBarMarque"
+        type="button"
+      >
+        <a
+          className="light-green"
+          href="/blog"
+          onClick={[Function]}
+        >
+          Sterling | Blog
+        </a>
+      </button>
+      <button
+        className="NavBarCollapse__hamburger_button light-green"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-bars fa-w-14 "
+          data-icon="bars"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+      <div
+        className="NavBarCollapse__big"
+      >
+        <nav
+          className="NavBarNavigation__s NavBarNavigation"
+        >
+          <ul
+            className="NavBarNavigation__list"
+          >
+            <li>
+              <div
+                className="NavBarNavigation__item"
+              >
+                <a
+                  className="NavBarNavItem light-green"
+                  href="/#about-me"
+                  onClick={[Function]}
+                >
+                  About Me
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                className="NavBarNavigation__item"
+              >
+                <a
+                  className="NavBarNavItem light-green"
+                  href="/#projects"
+                  onClick={[Function]}
+                >
+                  Projects
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                className="NavBarNavigation__item"
+              >
+                <a
+                  className="NavBarNavItem light-green"
+                  href="/#connect"
+                  onClick={[Function]}
+                >
+                  Connect
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                className="NavBarNavigation__item"
+              >
+                <a
+                  className="NavBarNavItem light-green"
+                  href="/"
+                  onClick={[Function]}
+                >
+                  Home
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+       
+    </div>
+  </nav>
+  <ul
+    className="BlogList__list"
+  >
+     
+     
+  </ul>
+</div>
 `;

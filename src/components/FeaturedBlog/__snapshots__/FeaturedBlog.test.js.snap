@@ -8,12 +8,17 @@ exports[`FeaturedBlog Component renders the UI as expected 1`] = `
     href="/blog/ck5dihtmc00003z5wdxct2ajt"
     onClick={[Function]}
   >
-    <img
-      alt="lorem picsum"
-      src="https://picsum.photos/seed/three/450/255"
+    <div
+      className="FeaturedBlog__pic"
+      style={
+        Object {
+          "backgroundImage": "url('https://picsum.photos/seed/three/450/255')",
+        }
+      }
     />
   </a>
   <a
+    className="FeaturedBlog__title_link"
     href="/blog/ck5dihtmc00003z5wdxct2ajt"
     onClick={[Function]}
   >
@@ -32,6 +37,11 @@ exports[`FeaturedBlog Component renders the UI as expected 1`] = `
     className="FeaturedBlog__author"
   >
     Brandon Hutchison
+  </div>
+  <div
+    className="FeaturedBlog__line"
+  >
+     
   </div>
 </li>
 `;

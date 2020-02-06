@@ -18,6 +18,7 @@ class BlogListItem extends Component {
             {this.props.blog.date + " · " + length + " min read"}
           </div>
           <div className="BlogListItem__author">{this.props.blog.author}</div>
+          <div className="BlogListItem__line"></div>
         </div>
         <div className="BlogListItem__pic_holder">
           <Link to={`/blog/${this.props.blog.id}`}>

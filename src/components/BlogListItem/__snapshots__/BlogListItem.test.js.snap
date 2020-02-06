@@ -8,6 +8,7 @@ exports[`BlogListItem Component renders the UI as expected 1`] = `
     className="BlogListItem__info"
   >
     <a
+      className="BlogListItem__title_link"
       href="/blog/ck5dihtmc00003z5wdxct2ajt"
       onClick={[Function]}
     >
@@ -27,6 +28,9 @@ exports[`BlogListItem Component renders the UI as expected 1`] = `
     >
       Brandon Hutchison
     </div>
+    <div
+      className="BlogListItem__line"
+    />
   </div>
   <div
     className="BlogListItem__pic_holder"
@@ -35,9 +39,13 @@ exports[`BlogListItem Component renders the UI as expected 1`] = `
       href="/blog/ck5dihtmc00003z5wdxct2ajt"
       onClick={[Function]}
     >
-      <img
-        alt="lorem picsum"
-        src="https://picsum.photos/seed/three/255/255"
+      <div
+        className="BlogListItem__pic"
+        style={
+          Object {
+            "backgroundImage": "url('https://picsum.photos/seed/three/255/255')",
+          }
+        }
       />
     </a>
   </div>

@@ -28,9 +28,54 @@ a.FeaturedBlog__title_link:focus {
 }
 
 .FeaturedBlog__pic {
-  width: calc(100vw - 32);
-  height: calc((100vw -32) / 900 * 510);
+  width: 100%;
+  height: calc((100vw -32px) / 900 * 510);
   max-height: 385px;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-width: 900px) {
+  .FeaturedBlog {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .FeaturedBlog__pic {
+    height: 450px;
+    width: 450px;
+    order: 1;
+  }
+
+  .FeaturedBlog__author {
+    order: 2;
+    margin: 40px;
+  }
+
+  .FeaturedBlog__date_and_length {
+    order: 5;
+    line-height: 1;
+    margin: 10px 40px 30px 40px;
+  }
+
+  .FeaturedBlog__title_link {
+    order: 3;
+    margin: 0 40px;
+    max-width: calc(100% - 530px);
+  }
+
+  h3.FeaturedBlog__title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .FeaturedBlog__line {
+    width: calc(100% - 530px);
+    border-bottom: 1px solid grey;
+    order: 4;
+    margin: 40px 0 0 40px;
+  }
 }

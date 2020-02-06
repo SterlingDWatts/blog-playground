@@ -25,6 +25,7 @@ class FeaturedBlog extends Component {
           {this.props.blog.date + " · " + length + " min read"}
         </div>
         <div className="FeaturedBlog__author">{this.props.blog.author}</div>
+        <div className="FeaturedBlog__line"> </div>
       </li>
     );
   }

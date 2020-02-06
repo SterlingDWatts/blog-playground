@@ -81,7 +81,7 @@ a.light:visited {
 */
 .NavBar__elpheba,
 .NavBarCollapse__small_shadow.elpheba {
-  background-color: #003d32;
+  background-color: rgb(0, 61, 50);
 }
 
 a.elpheba:link,
@@ -94,5 +94,27 @@ a.elpheba:hover,
 a.elpheba:focus,
 button.elpheba:hover,
 button.elpheba:focus {
+  color: #c5a600;
+}
+
+/*
+*--- light-green ---
+*/
+
+.NavBar__light-green,
+.NavBarCollapse__small_shadow.light-green {
+  background-color: rgb(0, 104, 91);
+}
+
+a.light-green:link,
+a.light-green:visited,
+button.light-green {
+  color: #fcd734;
+}
+
+a.light-green:hover,
+a.light-green:focus,
+button.light-green:hover,
+button.light-green:focus {
   color: #c5a600;
 }

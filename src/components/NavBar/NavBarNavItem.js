@@ -8,7 +8,11 @@ class NavBarNavItem extends Component {
   render() {
     const linkClass = "NavBarNavItem " + this.context.theme;
     return (
-      <a className={linkClass} href={this.props.href}>
+      <a
+        className={linkClass}
+        href={this.props.href}
+        onClick={this.context.toggleCollapse}
+      >
         {this.props.children}
       </a>
     );

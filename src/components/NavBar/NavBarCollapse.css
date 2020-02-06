@@ -34,6 +34,7 @@
 
   .NavBarCollapse__big {
     display: initial;
+    width: 50%;
   }
 
   .NavBarCollapse__small {

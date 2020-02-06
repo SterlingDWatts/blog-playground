@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
+import { BrowserRouter } from "react-router-dom";
 import BlogContext from "../../BlogContext";
 import blogs from "../../blog-file";
 import BlogList from "./BlogList";
@@ -10,12 +11,23 @@ describe(`BlogList Component`, () => {
 
   it("renders without crashing", () => {
     const div = document.createElement("div");
-    ReactDOM.render(<BlogList />, div);
+    ReactDOM.render(
+      <BrowserRouter>
+        <BlogList />
+      </BrowserRouter>,
+      div
+    );
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it("renders the UI as expected", () => {
-    const tree = renderer.create(<BlogList />).toJSON();
+    const tree = renderer
+      .create(
+        <BrowserRouter>
+          <BlogList />
+        </BrowserRouter>
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
@@ -26,7 +38,9 @@ describe(`BlogList Component`, () => {
     const tree = renderer
       .create(
         <BlogContext.Provider value={contextValue}>
-          <BlogList />
+          <BrowserRouter>
+            <BlogList />
+          </BrowserRouter>
         </BlogContext.Provider>
       )
       .toJSON();
