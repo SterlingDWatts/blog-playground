@@ -14,19 +14,31 @@ class Connect extends Component {
             <li>Cell: 858609.9463</li>
             <li>
               Email:{" "}
-              <a href="mailto:SterlingDWatts@gmail.com" target="_blank">
+              <a
+                href="mailto:SterlingDWatts@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 SterlingDWatts@gmail.com
               </a>
             </li>
             <li>
               GitHub Repo:{" "}
-              <a href="https://github.com/SterlingDWatts" target="_blank">
+              <a
+                href="https://github.com/SterlingDWatts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 /SterlingDWatts
               </a>
             </li>
             <li>
               Linkedin:{" "}
-              <a href="https://linkedin.com/in/sterlingdwatts" target="_blank">
+              <a
+                href="https://linkedin.com/in/sterlingdwatts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 in/SterlingDWatts
               </a>
             </li>

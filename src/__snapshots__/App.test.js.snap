@@ -294,6 +294,7 @@ exports[`App Component renders the UI as expected 1`] = `
              
             <a
               href="mailto:SterlingDWatts@gmail.com"
+              rel="noopener noreferrer"
               target="_blank"
             >
               SterlingDWatts@gmail.com
@@ -304,6 +305,7 @@ exports[`App Component renders the UI as expected 1`] = `
              
             <a
               href="https://github.com/SterlingDWatts"
+              rel="noopener noreferrer"
               target="_blank"
             >
               /SterlingDWatts
@@ -314,6 +316,7 @@ exports[`App Component renders the UI as expected 1`] = `
              
             <a
               href="https://linkedin.com/in/sterlingdwatts"
+              rel="noopener noreferrer"
               target="_blank"
             >
               in/SterlingDWatts

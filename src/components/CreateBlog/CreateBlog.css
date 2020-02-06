@@ -1,8 +1,0 @@
-.editArea {
-  min-height: 40px;
-  border: 1px solid black;
-}
-
-.editArea:focus {
-  background-color: red;
-}

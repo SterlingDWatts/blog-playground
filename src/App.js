@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./components/HomePage/HomePage";
 import BlogList from "./components/BlogList/BlogList";
 import BlogPage from "./components/BlogPage/BlogPage";
-import CreateBlog from "./components/CreateBlog/CreateBlog";
 import BlogContext from "./BlogContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -69,7 +68,6 @@ class App extends Component {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/blog" component={BlogList} />
           <Route path="/blog/:blogID" component={BlogPage} />
-          <Route path="/create" component={CreateBlog} />
           <NavBar theme="elpheba">
             <NavBar.Navigation size="fill">
               <NavBar.NavItem href="https://www.github.com">
