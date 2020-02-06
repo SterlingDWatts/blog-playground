@@ -3,33 +3,45 @@
 exports[`Project Component renders the UI as expected 1`] = `
 <div
   className="Project"
+  id="projects"
 >
   <header
     className="Project__header"
   >
-    <h3 />
+    <h3>
+      Quaff Quizz
+    </h3>
   </header>
   <div
-    className="Project__pic undefined_pic"
+    className="Project__pic Quaff Quizz_pic"
   >
     <div
       className="Project__about"
     >
-      <h5>
+      <h5
+        className="Project__name_and_links"
+      >
+        Quaff Quizz
          | 
         <a
+          href="https://sterlingdwatts.github.io/quaff_quizz"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Live App
         </a>
          | 
         <a
+          href="https://github.com/SterlingDWatts/quaff_quizz"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Repo
         </a>
       </h5>
-      <p />
+      <p>
+        A fun wine quiz web app with over 20 questions ranging over 4 topics.
+      </p>
       <button
         className="Project__more_info"
         onClick={[Function]}

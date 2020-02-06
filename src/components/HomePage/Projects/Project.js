@@ -24,11 +24,19 @@ class Project extends Component {
             <h5 className="Project__name_and_links">
               {this.props.name}
               {" | "}
-              <a href={this.props.site} target="_blank">
+              <a
+                href={this.props.site}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Live App
               </a>
               {" | "}
-              <a href={this.props.repo} target="_blank">
+              <a
+                href={this.props.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Repo
               </a>
             </h5>

@@ -189,6 +189,7 @@ exports[`HomePage Component renders the UI as expected 1`] = `
              | 
             <a
               href="https://sterlingdwatts.github.io/quaff_quizz"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Live App
@@ -196,6 +197,7 @@ exports[`HomePage Component renders the UI as expected 1`] = `
              | 
             <a
               href="https://github.com/SterlingDWatts/quaff_quizz"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Repo
@@ -237,6 +239,7 @@ exports[`HomePage Component renders the UI as expected 1`] = `
              | 
             <a
               href="https://sterlingdwatts.github.io/game_hub"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Live App
@@ -244,6 +247,7 @@ exports[`HomePage Component renders the UI as expected 1`] = `
              | 
             <a
               href="https://github.com/SterlingDWatts/game_hub"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Repo

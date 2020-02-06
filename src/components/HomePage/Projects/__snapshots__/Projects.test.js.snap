@@ -14,6 +14,7 @@ exports[`Projects Component renders the UI as expected 1`] = `
   </header>
   <div
     className="Project"
+    id="projects"
   >
     <header
       className="Project__header"
@@ -28,11 +29,14 @@ exports[`Projects Component renders the UI as expected 1`] = `
       <div
         className="Project__about"
       >
-        <h5>
+        <h5
+          className="Project__name_and_links"
+        >
           Quaff Quizz
            | 
           <a
             href="https://sterlingdwatts.github.io/quaff_quizz"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Live App
@@ -40,6 +44,7 @@ exports[`Projects Component renders the UI as expected 1`] = `
            | 
           <a
             href="https://github.com/SterlingDWatts/quaff_quizz"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Repo
@@ -59,6 +64,7 @@ exports[`Projects Component renders the UI as expected 1`] = `
   </div>
   <div
     className="Project"
+    id="projects"
   >
     <header
       className="Project__header"
@@ -73,11 +79,14 @@ exports[`Projects Component renders the UI as expected 1`] = `
       <div
         className="Project__about"
       >
-        <h5>
+        <h5
+          className="Project__name_and_links"
+        >
           Game Hub
            | 
           <a
             href="https://sterlingdwatts.github.io/game_hub"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Live App
@@ -85,6 +94,7 @@ exports[`Projects Component renders the UI as expected 1`] = `
            | 
           <a
             href="https://github.com/SterlingDWatts/game_hub"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Repo

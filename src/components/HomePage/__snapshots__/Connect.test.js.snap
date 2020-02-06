@@ -3,6 +3,7 @@
 exports[`Connect Component renders the UI as expected 1`] = `
 <section
   className="Connect"
+  id="connect"
 >
   <div
     className="Connect__pic"
@@ -21,7 +22,8 @@ exports[`Connect Component renders the UI as expected 1`] = `
         Cell: 858609.9463
       </li>
       <li>
-        Email: 
+        Email:
+         
         <a
           href="mailto:SterlingDWatts@gmail.com"
           target="_blank"
@@ -30,7 +32,8 @@ exports[`Connect Component renders the UI as expected 1`] = `
         </a>
       </li>
       <li>
-        GitHub Repo: 
+        GitHub Repo:
+         
         <a
           href="https://github.com/SterlingDWatts"
           target="_blank"
@@ -39,7 +42,8 @@ exports[`Connect Component renders the UI as expected 1`] = `
         </a>
       </li>
       <li>
-        Linkedin: 
+        Linkedin:
+         
         <a
           href="https://linkedin.com/in/sterlingdwatts"
           target="_blank"
