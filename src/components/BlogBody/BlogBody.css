@@ -37,4 +37,8 @@
   .BlogBody__paragraph {
     font-size: 24px;
   }
+
+  .BlogBody__title {
+    font-size: 40px;
+  }
 }
