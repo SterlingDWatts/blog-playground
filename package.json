@@ -11,14 +11,18 @@
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "cuid": "^2.1.8",
+    "file.min.js": "^1.2.3-0",
     "font-awesome": "^4.7.0",
+    "image.min.js": "^1.2.3-0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-froala-wysiwyg": "^3.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0"
   },
   "scripts": {
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
     "start": "react-scripts start",
     "prebuild": "set CI=true react-scripts test --colors",
     "build": "react-scripts build",
@@ -43,7 +47,17 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.1",
+    "onchange": "^6.1.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "react-test-renderer": "^16.12.0"

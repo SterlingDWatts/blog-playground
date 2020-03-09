@@ -29,6 +29,7 @@ class BlogPage extends Component {
               <NavBar.NavItem href="/#about-me">About Me</NavBar.NavItem>
               <NavBar.NavItem href="/#projects">Projects</NavBar.NavItem>
               <NavBar.NavItem href="/#connect">Connect</NavBar.NavItem>
+              <NavBar.NavItem href="/create">Create</NavBar.NavItem>
               <NavBar.NavItem href="/">Home</NavBar.NavItem>
             </NavBar.Navigation>
           </NavBar.Collapse>
